@@ -1,0 +1,301 @@
+
+
+
+# type 
+# var = "ram "
+# var1 = 45
+# var2 = 45.45
+# var3 = "0"
+# print(type(var))
+# print(type(var1))
+# print(type(var2))
+# print(type(var3))
+
+# row string 
+# s = (R"C:\TURBOC3\BIN\New folder")
+# print(s)
+
+# print() function : 
+
+# type casting() method : the type casting are change one data to anthor data
+# 1) int to float,str
+# float to int , str
+# str to int , float (necessary to integer string) , list , tuple , set
+
+
+# 1) int  convert into float and string
+# var = 12
+# print(type(var), var)
+# x = float(var)
+# print(type(x),x)
+# y = str(var)
+# print(type(y),y)
+
+# 2) float convert into  int and string
+# flo = 45.45
+# print(type(flo),flo)
+# a = int(flo)
+# print(type(a),a)
+# b = str(flo)
+# print(type(b),b)
+
+# 3) tring convert into int ,float (number are can be converted but name, cha letter are not)
+# string = "45"
+# print(type(string),string)
+# c = int(string)
+# print(type(c),c)
+# d = float(string)
+# print(type(d),d)
+# e = list(string)
+# print(type(e),e)
+# f = tuple(string)
+# print(type(f),f)
+# g = set(string)
+# print(type(g),g)
+
+# string
+# s = "My Name is jangid aditya"
+print(s)
+# x = s.split("@") # by defult tack a comma(,) and its conver into list 
+# print(x)
+# y =str(x)
+# print(type(y),y)
+# y = x.split("#")
+# # print(y)
+# a = s.capitalize() # convert into fist latter in uppar case 
+# print(a)
+# b = s.casefold() # convert into fist latter in lower case
+# print(b)
+# c = s.center(50) # set s string according to space's
+# print(c)
+# e = s.count("a") # count the particular latter , word ,etc
+# print(e)
+# f = s.find("a")  # find the particular latter word ,etc and give position and is con't find then give a -1 not a error according to index number(start for 0)
+# print(f)
+# g = s.index("a") # same as find but his give a find then give a error
+# print(g)
+# s= s.split()
+# h = "%".join(s)
+# print(h)
+# print(len(s))
+# i = s.zfill(30)
+# print(i)
+i = s.isupper()
+print(i)
+
+#     x = [5,5,6,1,10]
+
+# y = sorted(x)
+# print(y)
+# print(y[-2])
+
+
+# fruits=['apple','grapes','orange']
+# # print(fruits)
+# # fruits = [i.title() for i in fruits]
+# # # for i in fruits:
+# # #     i.title()
+    
+# # print(fruits)
+
+# # fruits = ('readme.txt', 'r') 
+# for line in fruits: 
+#     output =line.capitalize() 
+ 
+#     print(output,end=" ")
+
+# def is_leap(year):
+#     leap = False
+    
+#     # Write your logic here
+#     if (year%400==0 or year % 100 !=0 and year % 4 ==0):
+    
+#         return leap
+#     else :
+#         return  True
+
+    
+# is_leap(2040)
+
+def outer_fun(a, b):
+    def inner_fun(c, d):
+        return c + d
+    return inner_fun(a, b)
+
+res = outer_fun(5, 10)
+print(res)
+
+def outer_fun(a, b):
+    def inner_fun(c, d):
+        return c + d
+
+    return inner_fun(a, b)
+    return a
+
+result = outer_fun(5, 10)
+print(result)
+
+def display(**kwargs):
+    for i in kwargs:
+        print(i)
+
+display(emp="Kelly", salary=9000)
+
+def fun1(num):
+    return num + 25
+
+fun1(5)
+print(num)
+
+def fun1(name, age=20):
+    print(name, age)
+
+fun1('Emma')
+
+print('PYnative ', end='//')
+print(' is for ', end='//')
+print(' Python Lovers', end='//')
+
+print( 'Ben', 25, 'California',sep='--',)
+# print('[%c]' % 65)
+
+print('%d %d %.2f' % (11, '22', 11.22))
+
+
+x = float('NaN')
+print('%f, %e, %F, %E' % (x, x, x, x))
+print('%x, %X' % (15, 15))
+
+
+aaa
+bbb
+ccc
+ddd
+eee
+fff
+ggg
+
+
+f = open("test.txt", "r")
+print(f.readline(3))
+f.close()
+
+for num in range(2,-6,-1):
+    print(num, end=", ")
+
+x = 0
+a = 5
+b = 5
+if a > 0:
+    if b < 0: 
+        x = x + 5 
+    elif a > 5:
+        x = x + 4
+    else:
+        x = x + 3
+else:
+    x = x + 2
+print(x)
+
+x = 0
+a = 0
+b = -5
+if a > 0:
+    if b < 0: 
+        x = x + 5 
+    elif a > 5:
+        x = x + 4
+    else:
+        x = x + 3
+else:
+    x = x + 2
+print(x)
+
+var = 10
+for i in range(10):
+    for j in range(2, 10, 1):
+        if var % 2 == 0:
+            continue
+            var += 1
+    var+=1
+else:
+    var+=1
+print(var)
+
+a, b = 12, 5
+if a + b:
+    print('True')
+else:
+  print('False')
+
+for l in 'Jhon':
+   if l == 'o':
+      pass
+   print(l, end=", ")
+
+
+x = 0
+while (x < 100):
+  x+=2
+print(x)
+
+for num in range(10, 14):
+   for i in range(2, num):
+       if num%i == 1:
+          print(num)
+          break
+            
+
+x = 0
+for i in range(10):
+  for j in range(-1, -10, -1):
+    x += 1
+    print(x)
+
+print(2 ** 3 ** 2)
+print(2/6)
+
+x = 10
+y = 50
+if x ** 2 >= 100 and y < 100:
+    print(x, y)
+# print(x,y)
+
+print(bool(0), bool(3.14159), bool(-3), bool(1.0+1j))
+a = [10, 20]
+b = a
+b += [30, 40]
+print(a)
+print(b)
+
+
+a = 4
+b = 11
+print(a | b)
+print(a >> 2)
+
+print(2 * 3 ** 3 * 4)
+x = 100
+y = 50
+print(x and y)
+
+print(-18 // 4)
+
+def rem(a, b):
+    return a % b
+
+print(rem(3,7))
+
+3/7
+
+# repeat_lyrics()
+
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+
+def print_lyrics():
+    print("I'm a lumberjack, and I'm okay.")
+    print('I sleep all night and I work all day.')
+# print_lyrics()
+repeat_lyrics()
